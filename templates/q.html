@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Please enter commands in natural language</title>
+</head>
+<body>
+        <H2>Please enter commands in natural language</H2>
+<form action="{{ url_for('result') }}" method="post">
+    <p><textarea name="description" rows="5" cols="30"></textarea></p>
+    <p><input type="submit" value="提交"></p>
+</form>
+Example：<br><br>
+<a href="/result?description=Today's total weight">Today's total weight</a><br>
+
+</body>
